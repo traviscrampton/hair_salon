@@ -23,6 +23,6 @@ class Client
   end
 
   define_method(:==) do |another_client|
-    self.title().==(another_client.title()).&(self.stylist._id().==(another_client.stylist_id()))
+    self.title().==(another_client.title()).&(self.stylist_id().==(another_client.stylist_id()))
   end
 end
